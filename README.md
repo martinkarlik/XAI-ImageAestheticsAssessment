@@ -1,7 +1,9 @@
-InterpretableIAA
+Explainable Image Aesthetics Assessment
 ==============================
 
-Interpretable AI for photo culling
+This is the repository for Master Thesis: Explainble Image Aesthetics Assessment.
+
+This work explores the feasibility of an Explainable and Personalized Image Aesthetics Assessment (IAA). First, two Image Quality Assessment systems were implemented: a CNN-based model NIMA and a Transformer-based model MusiQ, with MusiQ outperforming NIMA on a comparative distortion evaluation. The Personalized framework was then designed and implemented as a modified Siamese neural network, using two image inputs and the NIMA model as an image encoder, inspired by how photographers compare two images at a time. The model was then personalized on four tasks, increasing in complexity: Learning to discriminate Black-and-White images, Blurry images, Blob-Overlaid images, and to prefer smiling over frowning faces. The personalization proved successful, with higher accuracy rates of all four personalized versions. The Explainable framework was implemented using LIME with default and AI-generated perturbations, first tested to explain a simple brightness-prediction model, then applied onto the two base models and onto the personalized versions. The interface of the Explainable Personalized IAA system was implemented into the Capture One photo-editing desktop application, where it was well-received by participants.
 
 Project Organization
 ------------
